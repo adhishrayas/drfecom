@@ -10,6 +10,7 @@ djangorestframework = "*"
 pytest = "*"
 pytest-django = "*"
 black = "*"
+django-mptt = "*"
 
 [dev-packages]
 

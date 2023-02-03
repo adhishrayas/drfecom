@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     #internal apps
-
+    'drfecom.product',
 ]
 
 MIDDLEWARE = [
