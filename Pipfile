@@ -9,6 +9,7 @@ psycopg2 = "*"
 djangorestframework = "*"
 pytest = "*"
 pytest-django = "*"
+black = "*"
 
 [dev-packages]
 
