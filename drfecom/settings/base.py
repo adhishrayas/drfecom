@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG',default=0)
+DEBUG = int(os.environ.get('DEBUG',default=0))
 
 
 
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
 
     #3rd party
     'rest_framework',
-
+    'drf_spectacular',
     #internal apps
     'drfecom.product',
 ]
@@ -117,5 +117,9 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
-    
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema'
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE':'Django DRF Ecommerce',
 }
