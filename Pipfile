@@ -13,6 +13,8 @@ black = "*"
 django-mptt = "*"
 drf-spectacular = "*"
 coverage = "*"
+pytest-cov = "*"
+pytest-factoryboy = "*"
 
 [dev-packages]
 
